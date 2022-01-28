@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="title">Title</label><br>
+            <input type="text" placeholder="Enter a task title">
+        </p>
+        <p>
+            <label for="description">Description</label><br>
+            <textarea name="description" id="description" cols="50" rows="5" placeholder="Enter the description of the task"></textarea>
+        </p>
+        <p>
+            <label for="category">Category</label><br>
+            <input type="text" placeholder="Enter the category">
+        </p>
+        <p>
+            <label for="priority-level">Priority Level</label><br>
+            <select name="options">
+                <option value="select">Select an item</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </p>
+        <p>
+            <label for="progress-level">Progress Level</label><br>
+            <select name="options">
+                <option value="select">Select an item</option>
+                <option value="pending">Pending</option>
+                <option value="started">Started</option>
+                <option value="completed">Completed</option>
+            </select>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+
+</body>
+</html>
