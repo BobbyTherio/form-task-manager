@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Form</title>
-</head>
+    <head>
+        <title>Create Task</title>
+    </head>
 
-<body>
-    <form>
-        <p>
-            <label for="title">Title</label><br>
-            <input type="text" placeholder="Enter a task title">
-        </p>
-        <p>
-            <label for="description">Description</label><br>
-            <textarea name="description" id="description" cols="50" rows="5" placeholder="Enter the description of the task"></textarea>
-        </p>
-        <p>
-            <label for="category">Category</label><br>
-            <input type="text" placeholder="Enter the category">
-        </p>
-        <p>
-            <label for="priority-level">Priority Level</label><br>
-            <select name="options">
-                <option value="select">Select an item</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="High">High</option>
-            </select>
-        </p>
-        <p>
-            <label for="progress-level">Progress Level</label><br>
-            <select name="options">
-                <option value="select">Select an item</option>
-                <option value="pending">Pending</option>
-                <option value="started">Started</option>
-                <option value="completed">Completed</option>
-            </select>
-        </p>
-        <p>
-            <button>Submit</button>
-        </p>
-    </form>
+        <style>
+            .button {
+                border: 1px solid black;
+                text-decoration: none;
+                padding: 10px 30px;
+                border-radius: 5px;
+                background-color: green;
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-</body>
+            }   
+
+            .button:hover {
+                background-color: rgb(29, 94, 29);
+            }
+
+            input, textarea, select {
+                width: 400px;
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            select {
+                width: 422px;
+            }
+        </style>
+
+
+
+    <body>
+        <form>
+            <p>
+                <label>Title</label><br>
+                <input type="text" placeholder="Enter title here">
+
+            </p>
+            <p>
+                <label>Description</label><br>
+                <textarea rows="5" cols="50" placeholder="Enter description here"></textarea>
+
+            </p>
+            <p>
+                <label>Category</label><br>
+                <input type="text">
+
+            </p>
+            <p>
+                <label>Priority Level</label><br>
+                <select>
+                    <option>Select an item</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+            </p>
+            <p>
+                <label>Progress Level</label><br>
+                <select>
+                    <option>Select an item</option>
+                    <option>Pending</option>
+                    <option>Started</option>
+                    <option>Completed</option>
+                </select>
+
+            </p>
+            <button type="button" class="button">Submit</button>
+        </form>
+        <br><br>
+        <a href="https://google.com" class="button">Go to Google</a>
+
+
+
+    </body>
 </html>
